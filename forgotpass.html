@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" type="text/css" href="forgotpass.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+     <!-- Video Enable option -->
+     <video autoplay loop id="background-video" muted>
+        <source src="video/Marvels.mp4" type="video/mp4">
+    </video>
+
+     <!-- Button to toggle audio -->
+     <button id="audio-toggle">
+        <i class="fas fa-volume-mute"></i> Sound Off
+    </button>
+    <div class="container">
+        <form action="#">
+            <h1>Forgot Password</h1>
+            <p>Enter your email address, and we'll send you notification link to your mail to reset your password.</p>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Send Reset Link</button>
+            <a href="login.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Login</a>
+        </form>
+    </div>
+    <script type="text/javascript">
+        // const signUpButton = document.getElementById('signUp');
+        // const signInButton = document.getElementById('signIn');
+        // const main = document.getElementById('main');
+        const video = document.getElementById('background-video');
+        const audioToggle = document.getElementById('audio-toggle');
+        const icon = audioToggle.querySelector('i');
+
+        // Toggle audio on/off with icons
+        audioToggle.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                audioToggle.textContent = ' Sound Off';
+                icon.className = 'fas fa-volume-mute';
+                audioToggle.prepend(icon); // Ensure icon stays at the beginning
+            } else {
+                video.muted = true;
+                audioToggle.textContent = ' Sound On';
+                icon.className = 'fas fa-volume-up';
+                audioToggle.prepend(icon);
+            }
+        });
+
+        // signUpButton.addEventListener('click', () => {
+        //     main.classList.add("right-panel-active");
+        // });
+ 
+        // signInButton.addEventListener('click', () => {
+        //     main.classList.remove("right-panel-active");
+        // });
+
+    </script>
+</body>
+</html>

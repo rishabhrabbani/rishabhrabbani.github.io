@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background: #f6f5f7;
+    background-image: url(img/slide2.jpg);
+    background-size: cover;
+    background-position: center; 
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background: #f6f5f7; /* Fallback background color */
+}
+
+/* Background video styling */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Keep the video in the background */
+}
+/* Example */
+#audio-toggle {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    /* display: inline-flex;  */
+    width: auto;
+}
+
+/* Button hover effect */
+#audio-toggle:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px 2px red; /* Red hover effect */
+}
+
+/* Icon inside the button */
+#audio-toggle i {
+    margin-right: 8px; /* Adjust the space between icon and text */
+}
+
+
+#audio-toggle i {
+    margin-right: 8px;
+}
+
+#audio-toggle:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px 2px red; 
+}
+
+.container {
+    background-image: url(img/Cap.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 40px;
+    width: 450px;
+    max-width: 80%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); 
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+a.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    color: #fffdfd;
+}
+
+a.back-link:hover {
+    text-decoration: underline;
+}
+
+a.back-link i {
+    margin-right: 5px;
+}

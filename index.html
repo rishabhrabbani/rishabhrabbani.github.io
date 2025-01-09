@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <!-- Link to CSS -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Link Swiper Css -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+     <header>
+        <div class="nav container">
+         <a href="index.html" class="logo">
+            MOVIES<span>WEB</span>
+         </a>
+         <!-- Search Box -->
+          <div class="search-box">
+            <input type="search" name="" id="search-input" placeholder="Search movies">
+            <i class='bx bx-search'></i>
+          </div>
+          <!-- User -->
+           <a href="login.html" class="user">
+            <img src="img/2022.png" alt="" class="user-img">
+           </a>
+           <!-- Nav Bar -->
+            <div class="navbar">
+              <li><a href="#home" class="nav-link nav-active">  
+                <i class='bx bx-home'></i>
+                <span class="nav-link-title">Home</span>
+              </a></li>
+              <a href="#popular" class="nav-link">
+                <i class='bx bxs-hot'></i>
+                <span class="nav-link-title">Trending</span>
+              </a>
+              <a href="#movies" class="nav-link">
+                <i class='bx bx-compass'></i>
+                <span class="nav-link-title">Explore</span>
+              </a>
+              <a href="play-page.html" class="nav-link">
+                <i class='bx bx-tv'></i>
+                <span class="nav-link-title">Movies</span>
+              </a>
+              <a href="#home" class="nav-link">
+                <i class='bx bx-heart' ></i>
+                <span class="nav-link-title">Favourite</span>
+              </a>
+            </div>
+        </div>
+     </header>
+     <!-- Home -->
+      <section class="home container" id="home">
+        <!-- Home Image -->
+        <img src="img/Lucky.png" alt="" class="home-img">
+        <!-- Home Text -->
+         <div class="home-text"><br><br>
+          <h1 class="home-title">Lucky Baskhar</h1>
+          <h2 class="home-info">Crime/Thriller</h2>
+          <p>2024</p>
+          <a href="#" class="watch-btn">
+            <i class='bx bx-right-arrow' ></i>
+          <h3 class="movie-head">Watch</h3>
+          </a>
+        <!-- Example -->
+        <!-- Play Btn -->
+         <i class='bx bx-right-arrow play-movie'></i>
+         <!-- Video Container -->
+           <div class="video-container">
+        <!-- Video Box -->
+         <div class="video-box">
+          <video id="myvideo" src="play-page/Lucky Baskhar.mp4" controls></video>
+          <!-- Close Video Icon -->
+          <i class='bx bx-x close-video'></i>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- Home End -->
+       <!-- Popular Section Start -->
+        <section class="popular container" id="popular">
+          <!-- Heading -->
+           <div class="heading">
+            <h2 class="heading-title">Popular Movies</h2>
+             <!-- Swiper Buttons -->
+            <div class="swiper-btn">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+           <!-- Content -->
+            <div class="popular-content swiper">
+              <div class="swiper-wrapper">
+                <!-- Books Box 1 -->
+                <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/movie-6.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Money Heist</h2>
+                      <span class="movie-type">Crime/Drama</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>  
+                <!-- Books Box 2 -->
+                <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/Stranger.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Stranger Things</h2>
+                      <span class="movie-type">Horror/Thriller</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  <!-- Books Box 2 -->
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                      <img src="img/joker.png" alt="" class="movie-box-img">
+                      <div class="box-text">
+                        <h2 class="movie-title">Joker</h2>
+                        <span class="movie-type">Crime/Thriller</span>
+                        <a href="#" class="watch-btn play-btn">
+                          <i class='bx bx-right-arrow' ></i>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                 <!-- Books Box 3 -->
+                <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/popular-movie-3.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Loki</h2>
+                      <span class="movie-type">Action Thriller/Drama</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Books Box 4 -->
+                <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/Conjuring.png" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Conjuring</h2>
+                      <span class="movie-type">Horror/Thriller</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  <!-- Books Box 5 -->
+                  <div class="swiper-slide">
+                    <div class="movie-box">
+                      <img src="img/movie-7.jpg" alt="" class="movie-box-img">
+                      <div class="box-text">
+                        <h2 class="movie-title">Wolverine</h2>
+                        <span class="movie-type">Action/Thriller</span>
+                        <a href="#" class="watch-btn play-btn">
+                          <i class='bx bx-right-arrow' ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- Books Box 6 -->
+                 <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/Thuppaki.png" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Thuppaki</h2>
+                      <span class="movie-type">Crime/Action</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                 <!-- Books Box 7 -->
+                 <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/Krish.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Krish 3</h2>
+                      <span class="movie-type">Fantasy/Action</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Books Box 7 -->
+                <div class="swiper-slide">
+                  <div class="movie-box">
+                    <img src="img/Mankatha.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                      <h2 class="movie-title">Mankatha</h2>
+                      <span class="movie-type">Action/Crime</span>
+                      <a href="#" class="watch-btn play-btn">
+                        <i class='bx bx-right-arrow' ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+        </section>
+        <!-- Popular Section End -->
+         <section class="movies container" id="movies">
+          <!-- Heading -->
+          <div class="heading">
+            <h2 class="heading-title">Movies and Shows</h2>
+          </div>
+             <!-- Movies Content -->
+            <div class="movies-content">
+              <!-- Movies Box 1 -->
+              <div class="movie-box">
+                <img src="img/home-background.png" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Sita Ramam</h2>
+                  <span class="movie-type">Love/Thriller</span>
+                  <a href="play-sita.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 2 -->
+              <div class="movie-box">
+                <img src="img/Nun.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Nun</h2>
+                  <span class="movie-type">Horror/Thriller</span>
+                  <a href="play-main.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+               <!-- Movies Box 3 -->
+               <div class="movie-box">
+                <img src="img/Titanic.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Titanic</h2>
+                  <span class="movie-type">Love/Thriller</span>
+                  <a href="play-titanic.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+               <!-- Movies Box 4 -->
+               <div class="movie-box">
+                <img src="img/movie-1.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Jumanji</h2>
+                  <span class="movie-type">Action/Drama</span>
+                  <a href="play-jumanji.html" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 5 -->
+              <div class="movie-box">
+                <img src="img/Hanuman.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Hanuman</h2>
+                  <span class="movie-type">Fantasy/Action</span>
+                  <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 6 -->
+              <div class="movie-box">
+                <img src="img/Termi.jpg" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Terminator</h2>
+                  <span class="movie-type">Action/Thriller</span>
+                  <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 7 -->
+              <div class="movie-box">
+                <img src="img/Jawan.png" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">Jawan</h2>
+                  <span class="movie-type">Action/Thriller</span>
+                  <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 8 -->
+              <div class="movie-box">
+                <img src="img/Narnia.png" alt="" class="movie-box-img">
+                <div class="box-text">
+                  <h2 class="movie-title">The Chronicles of Narnia</h2>
+                  <span class="movie-type">Fantasy/Adventure</span>
+                  <a href="#" class="watch-btn play-btn">
+                    <i class='bx bx-right-arrow' ></i>
+                  </a>
+                </div>
+              </div>
+              <!-- Movies Box 9 -->
+          <div class="movie-box">
+            <img src="img/Enthiran.jpg" alt="" class="movie-box-img">
+            <div class="box-text">
+              <h2 class="movie-title">Enthiran</h2>
+              <span class="movie-type">Sci-fi/Action</span>
+              <a href="#" class="watch-btn play-btn">
+                <i class='bx bx-right-arrow' ></i>
+              </a>
+            </div>
+          </div>
+             <!-- Movies Box 10 -->
+             <div class="movie-box">
+              <img src="img/CaptainAmerica.jpg" alt="" class="movie-box-img">
+              <div class="box-text">
+                <h2 class="movie-title">Captain America: Civil War</h2>
+                <span class="movie-type">Sci-fi/Action</span>
+                <a href="#" class="watch-btn play-btn">
+                  <i class='bx bx-right-arrow' ></i>
+                </a>
+              </div>
+            </div>
+              <!-- Movies Box 11 -->
+          <div class="movie-box">
+            <img src="img/Rrr.png" alt="" class="movie-box-img">
+            <div class="box-text">
+              <h2 class="movie-title">RRR</h2>
+              <span class="movie-type">Action/Adventure</span>
+              <a href="#" class="watch-btn play-btn">
+                <i class='bx bx-right-arrow' ></i>
+              </a>
+            </div>
+          </div>
+          <!-- Movies Box 12 -->
+          <div class="movie-box">
+            <img src="img/Dhoni.png" alt="" class="movie-box-img">
+            <div class="box-text">
+              <h2 class="movie-title">MS Dhoni The Untold Story</h2>
+              <span class="movie-type">Sports/Drama</span>
+              <a href="#" class="watch-btn play-btn">
+                <i class='bx bx-right-arrow' ></i>
+              </a>
+            </div>
+          </div>
+      </div>
+  </section>
+    <!-- Movies Section End -->
+     <!-- Next page -->
+      <div class="next-page">
+        <a href="play-page.html" class="next-btn">Next Page</a>
+      </div>
+      <!-- Copyright -->
+       <div class="copyright">
+        <p>&#169; Rishabhrabbani All Right Reserved</p>
+       </div>
+    <!-- Link Swiper Js -->
+     <script src="js/swiper-bundle.min.js"></script>
+    <!-- Link to Js -->
+     <script src="main.js"></script>
+</body>
+</html>
